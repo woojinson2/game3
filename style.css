@@ -1,0 +1,75 @@
+
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  background-image: url('background.png'); /* 배경 이미지 경로 */
+  background-size: auto; /* 화면에 꽉 차게 이미지 조정 */
+  background-position: center; /* 이미지 위치 중앙으로 */
+  background-repeat: no-repeat; /* 이미지 반복 안 함 */
+  margin: 0;
+}
+
+.slot-machine {
+  display: flex;
+  justify-content: space-around; /* 슬롯 간 간격 추가 */
+  margin-bottom: 20px;
+
+
+
+  
+
+
+  /* 위치 조정 */
+  position: relative; /* 부모 요소 기준으로 위치 조정 */
+  top: 100px; /* 부모 요소 기준으로 아래로 100px 이동 */
+}
+
+
+
+
+.slot {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  background-color: grey;
+  border-radius: 10px;
+}
+
+button {
+  padding: 20px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+
+  position: absolute; /* 절대 위치 지정 */
+  bottom: 20px; /* 화면 하단에서 20px 위로 */
+  left: 50%; /* 가로 중앙 정렬 */
+  transform: translateX(-50%); /* 가로 정렬을 정확히 중앙으로 */
+  /* 윤곽선 추가 */
+  outline: 3px solid #333;
+  outline-offset: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+  
+  outline-color: #ff0000; /* 윤곽선 색상 변경 */
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
